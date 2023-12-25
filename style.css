@@ -126,20 +126,6 @@
 
 /* main content */
 
-/* card1 */
-#btn2 button{
-    width: 100px;
-    height: 30px;
-    background: transparent;
-    border: 1px solid black;
-    transition: 0.5s ease;
-    cursor: pointer;
-}
-#btn2 button:hover{
-    background-color: rgba(238,224,208);
-}
-/* card1 */
-
 /* card2 */
 #tpc{
     box-shadow: 0 0 5px black;
