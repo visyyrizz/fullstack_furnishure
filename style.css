@@ -75,13 +75,7 @@
 /* navbar top */
 
 /* main content */
-.main-content{
-    width: 100%;
-    height: 90vh;
-    background-image: url(./image/background.png);
-    background-size: cover;
-    background-position: 70%;
-}
+
 
 /* navbar */
 #navbar-color{
@@ -218,3 +212,44 @@
     color: white;
 }
 /* footer */
+
+/* slider*/
+      .image-slider {
+        position: static;
+        max-width: 500px;
+        margin: auto;
+      }
+      
+      .slides {
+        display: flex;
+        overflow-x: auto;
+        scroll-behavior: smooth;
+      }
+      
+      .slides img {
+        max-width: 100%;
+        padding:5%;
+        height: auto;
+      }
+      
+      .prev,
+      .next {
+        position: absolute;
+        top: 70%;
+        transform: translateY(-50%);
+        background-color: black;
+        color: white;
+        padding: 10px;
+        border: none;
+        cursor: pointer;
+        z-index: 1;
+      }
+      
+      .prev {
+        left: 0;
+      }
+      
+      .next {
+        right: 0;
+      }
+    /*slider*/
