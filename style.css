@@ -214,42 +214,45 @@
 /* footer */
 
 /* slider*/
-      .image-slider {
-        position: static;
-        max-width: 500px;
-        margin: auto;
-      }
-      
-      .slides {
-        display: flex;
-        overflow-x: auto;
-        scroll-behavior: smooth;
-      }
-      
-      .slides img {
-        max-width: 100%;
-        padding:5%;
-        height: auto;
-      }
-      
-      .prev,
-      .next {
-        position: absolute;
-        top: 70%;
-        transform: translateY(-50%);
-        background-color: black;
-        color: white;
-        padding: 10px;
-        border: none;
-        cursor: pointer;
-        z-index: 1;
-      }
-      
-      .prev {
-        left: 0;
-      }
-      
-      .next {
-        right: 0;
-      }
+.slider {
+    position: relative;
+    max-width: 1000px;
+    margin: auto;
+    text-align: center;
+  }
+  
+  .slides {
+    display: flex;
+    overflow-x: auto;
+    scroll-behavior: smooth;
+    margin: 0 auto;
+  }
+  
+  .slides img {
+    width: 100%;
+    height: auto;
+  }
+  
+  .prev,
+  .next {
+    position: absolute;
+    top: 50%;
+    background-color: black;
+    color: white;
+    padding: 10px;
+    border: none;
+    cursor: pointer;
+    z-index: 1;
+  }
+  
+  .prev {
+    left: 0;
+    transform: translateY(-50%) translateX(-50%);
+  }
+  
+  .next {
+    right: -10px; /* Adjust this value to touch the margin */
+    transform: translateY(-50%);
+  }
+  
     /*slider*/
