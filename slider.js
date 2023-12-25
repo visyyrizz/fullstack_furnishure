@@ -2,39 +2,52 @@ let slideIndex = 0;
 
 function showSlides() {
   const slides = document.querySelectorAll('.slides img');
+  
   for (let i = 0; i < slides.length; i++) {
     slides[i].style.display = 'none';
   }
+  
   slideIndex++;
-  if (slideIndex > slides.length) {
-    slideIndex = 1;
+  
+  if (slideIndex >= slides.length) {
+    slideIndex = 0;
   }
-  slides[slideIndex - 1].style.display = 'block';
+  
+  slides[slideIndex].style.display = 'block';
 }
 
 function prevSlide() {
   const slides = document.querySelectorAll('.slides img');
-  if (slideIndex <= 1) {
-    slideIndex = slides.length;
-  } else {
-    slideIndex--;
+  
+  slideIndex--;
+  
+  if (slideIndex < 0) {
+    slideIndex = slides.length - 1;
   }
-  showSlides();
+  
+  for (let i = 0; i < slides.length; i++) {
+    slides[i].style.display = 'none';
+  }
+  
+  slides[slideIndex].style.display = 'block';
 }
 
 function nextSlide() {
   const slides = document.querySelectorAll('.slides img');
+  
+  slideIndex++;
+  
   if (slideIndex >= slides.length) {
-    slideIndex = 1;
-  } else {
-    slideIndex++;
+    slideIndex = 0;
   }
-  showSlides();
+  
+  for (let i = 0; i < slides.length; i++) {
+    slides[i].style.display = 'none';
+  }
+  
+  slides[slideIndex].style.display = 'block';
 }
 
-// Auto slide change, change 3000 to desired interval in milliseconds (3 seconds here)
-setInterval(() => {
-  nextSlide();
-}, 3000);
+setInterval(showSlides, 3000);
 
 showSlides();

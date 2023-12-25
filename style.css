@@ -52,7 +52,7 @@
         padding: 8px 40px 8px 8px; /* Adjust padding for input field and icon space */
         border-radius: 10px; /* Rounded border */
         border: 1px solid #ccc; /* Border color */
-        width: 200px; /* Adjust the width as needed */
+        width: 400px; /* Adjust the width as needed */
       }
     
       input[type="submit"] {
@@ -193,9 +193,6 @@
 .copyright{
     color: white;
     margin-top: 20px;
-}
-.credite{
-    color: white;
 }
 /* footer */
 
