@@ -15,7 +15,7 @@ body{
 }
 .wrapper{
     width: 420px;
-    background: #FFFDD0;
+    background: rgba(238,224,208);
     color:black;
     border-radius: 10px;
     padding:30px 40px;
@@ -61,7 +61,7 @@ body{
     
 }
 .rememberforgot label input{
-    accent-color: rgba(238,224,208);
+    accent-color: rgb(240, 217, 191);
     margin-right:3px;
 }
 .rememberforgot a{
