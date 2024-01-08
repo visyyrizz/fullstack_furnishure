@@ -8,15 +8,14 @@
 </head>
 <body>
     <main>
-    
         <section id="sign-up">
-            <h1><centre>Sign Up</centre></h1>
-            <form action="index.html">
-                <label for ="username">First Name</label>
-                <input type="text" id="username" name="username" placeholder="First name" required>
+            <h1><center>Sign Up</center></h1>
+            <form onsubmit="return validateForm()">
+                <label for="first-name">First Name</label>
+                <input type="text" id="first-name" name="first-name" placeholder="First name" required>
 
-                <label for="username">Last Name</label>
-                <input type="text" id="username" name="username" placeholder="last name" required>
+                <label for="last-name">Last Name</label>
+                <input type="text" id="last-name" name="last-name" placeholder="Last name" required>
 
                 <label for="mail-id">Mail ID</label>
                 <input type="email" id="mail-id" name="mail" required>
@@ -25,15 +24,14 @@
                 <input type="password" id="password" name="password" required>
 
                 <label for="confirm-password">Confirm password</label>
-                <input type="password" id="confirm-password" name="password" required><br>
-                <div="a">
-                <input type="submit" value="Register">
+                <input type="password" id="confirm-password" name="confirm-password" required><br>
+                
+                <div class="a">
+                    <input type="submit" value="Register">
                 </div>
             </form>
-
         </section>
     </main>
     <script src="register.js"></script>
-    </body>
 </body>
 </html>
