@@ -2,10 +2,271 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>furnishure</title>
+    <title>Furniture</title>
+    <link rel="stylesheet" href="style.css">
+    <!-- bootstrap link -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.12.9/dist/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+
+    <!-- bootstrap link -->
+    
+    <!-- icons -->
+    <link href='https://unpkg.com/boxicons@2.1.2/css/boxicons.min.css' rel='stylesheet'>
+    <!-- icons -->
+
+
 </head>
 <body>
-    
+    <!-- navbar top -->
+    <div class="container">
+        <div class="navbar-top">
+            <div class="logo">
+                <a href="index.html"><h3>FURNISHURE</h3></a>
+            </div>
+            <div class="searchbar">
+                <form id="searchForm" action="/search" method="get">
+                    <input type="text" id="search" name="q" placeholder="Search...">
+                    <!-- SVG search icon -->
+                    <svg class="search-icon" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" onclick="submitForm()">
+                      <path d="M15.5 14h-.79l-.28-.27a6.5 6.5 0 0 0 1.48-5.34c-.47-2.78-2.89-5-5.75-5.34a6.505 6.505 0 0 0-7.34 7.33c.34 2.86 2.56 5.28 5.34 5.75a6.5 6.5 0 0 0 5.34-1.48l.27.28v.79l4.25 4.25c.41.41 1.08.41 1.49 0 .41-.41.41-1.08 0-1.49L15.5 14zm-6 0C7.01 14 5 11.99 5 9.5S7.01 5 9.5 5 14 7.01 14 9.5 11.99 14 9.5 14z"/>
+                      <path d="M0 0h24v24H0z" fill="none"/>
+                    </svg>
+                  </form>
+                  
+                  <script>
+                    function submitForm() {
+                      document.getElementById('searchForm').submit();
+                    }
+                  </script>
+            </div>
+            <div class="icons">
+                <i><a href="login.html"><img src="./image/w38-profile-icon.svg" alt="" width="25px"></a></i>
+                <i><img src="./image/heart.png" alt="" width="20px"></i>
+                <i><img src="./image/shopping-cart.png" alt="" width="25px"></i>
+            </div>
+        </div>
+    </div>
+    <!-- navbar top -->
+
+    <!-- main content -->
+    <div class="main-content">
+        <nav class="navbar navbar-expand-md" id="navbar-color">
+           <div class="container">
+            
+            <!-- Navbar links -->
+            <div class="collapse navbar-collapse" id="collapsibleNavbar">
+              <ul class="navbar-nav">
+                <li class="nav-item">
+                  <a class="nav-link" href="#">Chair</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#">Sofas</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#">Bedroom</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#">Study</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#">Lamps & Lighting</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#">Dining Set</a>
+                </li>
+              </ul>
+            </div>
+           </div>
+          </nav>
+          <div class="slider" id="slider">
+            <div class="slides">
+              <img src="./image/s-4.jpg" alt="Image 1">
+              <img src="./image/s-2.jpg" alt="Image 2">
+              <img src="./image/s-1.jpg" alt="Image 3">
+              <img src="./image/s-3.jpg" alt="Image 4">
+            </div>
+            <button class="prev" onclick="prevSlide()">&#10094;</button>
+            <button class="next" onclick="nextSlide()">&#10095;</button>
+            <script src="slider.js"></script>
+          </div>
+
+
+          
+          
+    </div>
+    <!-- main content -->
+
+    <!-- card1 -->
+    <div class="container">
+        <h2 class="text-center" style="margin-top: 50px;">Explore our Furniture Range</h2>
+        <div class="row" style="margin-top: 50px;">
+            <div class="col-md-4 py-3 py-md-0">
+                <div class="card" id="tpc">
+                    <img src="./image/ch.png" alt="" class="card image-top">
+                    <div class="card-img-overlay">
+                        <h4 class="card-titel">Comfy Chairs</h4>
+                        <p class="card-text">99+ Options, Starting from ₹2999-></p>
+                        <div id="btn2"><button>View More</button></div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4 py-3 py-md-0">
+                <div class="card" id="tpc">
+                    <img src="./image/sf.png" alt="" class="card image-top">
+                    <div class="card-img-overlay">
+                        <h4 class="card-titel">Sofa</h4>
+                        <p class="card-text">50+ Options, Starting from ₹9999-></p>
+                        <div id="btn2"><button>View More</button></div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4 py-3 py-md-0">
+                <div class="card" id="tpc">
+                    <img src="./image/work desk.png" alt="" class="card image-top">
+                    <div class="card-img-overlay">
+                        <h4 class="card-titel">Work Desk</h4>
+                        <p class="card-text">60+ Options, Starting from ₹6999-></p>
+                        <div id="btn2"><button>View More</button></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- card1 -->
+
+    <!-- card2 -->
+    <div class="container">
+        <h3 class="text-center" style="margin-top: 50px;">TRENDLY PRODUCTS</h3>
+        <div class="row" style="margin-top: 50px;">
+            <div class="col-md-3 py-3 py-md-0">
+                <div class="card" id="c">
+                    <img src="./image/card1.png" alt="" class="card image-top">
+                    <div class="card-body">
+                        <h5 class="card-titel text-center">Vegan Leather 3 Seater Sofa</h5>
+                        <p class="card-text text-center">₹12499</p>
+                        <div id="btn3"><button>Shop Now</button></div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-3 py-3 py-md-0">
+                <div class="card" id="c">
+                    <img src="./image/card2.png" alt="" class="card image-top">
+                    <div class="card-body">
+                        <h5 class="card-titel text-center">white Leather 1 Seater Sofa</h5>
+                        <p class="card-text text-center">₹8999</p>
+                        <div id="btn3"><button>Shop Now</button></div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-3 py-3 py-md-0">
+                <div class="card" id="c">
+                    <img src="./image/card3.png" alt="" class="card image-top">
+                    <div class="card-body">
+                        <h5 class="card-titel text-center">Modern Plastic Chair</h5>
+                        <p class="card-text text-center">₹5999</p>
+                        <div id="btn3"><button>Shop Now</button></div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-3 py-3 py-md-0">
+                <div class="card" id="c">
+                    <img src="./image/card4.png" alt="" class="card image-top">
+                    <div class="card-body">
+                        <h5 class="card-titel text-center">Leather Modern Chair</h5>
+                        <p class="card-text text-center">₹6999</p>
+                        <div id="btn3"><button>Shop Now</button></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+
+        <div class="row" style="margin-top: 50px;">
+            <div class="col-md-3 py-3 py-md-0">
+                <div class="card" id="c">
+                    <img src="./image/card5.png" alt="" class="card image-top">
+                    <div class="card-body">
+                        <h5 class="card-titel text-center">Grey Fabric Chair</h5>
+                        <p class="card-text text-center">₹4999</p>
+                        <div id="btn3"><button>Shop Now</button></div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-3 py-3 py-md-0">
+                <div class="card" id="c">
+                    <img src="./image/card6.png" alt="" class="card image-top">
+                    <div class="card-body">
+                        <h5 class="card-titel text-center">Modern Leather White Sofa Chair</h5>
+                        <p class="card-text text-center">₹12999</p>
+                        <div id="btn3"><button>Shop Now</button></div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-3 py-3 py-md-0">
+                <div class="card" id="c">
+                    <img src="./image/office table.webp" alt="" class="card image-top">
+                    <div class="card-body">
+                        <h5 class="card-titel text-center">Executive Desk In Natural Finish</h5>
+                        <p class="card-text text-center">₹14500</p>
+                        <div id="btn3"><button>Shop Now</button></div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-3 py-3 py-md-0">
+                <div class="card" id="c">
+                    <img src="./image/queen size bed.webp" alt="" class="card image-top">
+                    <div class="card-body">
+                        <h5 class="card-titel text-center">Queen Size Bed In Wallnut Finish</h5>
+                        <p class="card-text text-center">₹10500</p>
+                        <div id="btn3"><button>Shop Now</button></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- card2 -->
+
+    <!-- about -->
+    <div class="container">
+        <h1 class="text-center" style="margin-top: 50px;">ABOUT</h1>
+        <div class="row" style="margin-top: 50px;">
+            <div class="col-md-6 py-3 py-md-0">
+                <div class="card">
+                    <img src="./image/about.png" alt="">
+                </div>
+            </div>
+            <div class="col-md-6 py-3 py-md-0">
+                <p>Welcome to our furnishure, where style meets comfort and functionality. Discover an exquisite collection crafted to transform your spaces into havens of sophistication and relaxation. From timeless classics to contemporary marvels, each piece is meticulously designed to elevate your home's aesthetic while ensuring utmost comfort. Whether you seek the warmth of wooden accents, the modern allure of minimalist designs, or the cozy embrace of plush upholstery, our diverse range caters to every taste and preference. Embrace quality, craftsmanship, and elegance as you explore our curated selection, meticulously chosen to inspire and enhance your living experience. Redefine your home with our furniture - where beauty meets functionality in every carefully curated piece.</p>
+                <div id="btn4"><button>Read More...</button></div>
+            </div>
+        </div>
+    </div>
+    <!-- about -->
+     
+    <!-- footer -->
+    <footer id="footer">
+        <h1 class="text-center">Furnishure</h1>
+        <p class="text-center">Internationally Trusted Furniture</p>
+        <div class="icons text-center">
+            <i class="bx bxl-twitter"></i>
+            <i class="bx bxl-facebook"></i>
+            <i class="bx bxl-google"></i>
+            <i class="bx bxl-instagram"></i>
+        </div>
+        <div class="copyright text-center">
+            &copy; Copyright <strong><span>Furnishure</span></strong>. All Rights Reserved
+        </div>
+        </div>
+    </footer>
+    <!-- footer -->
+
+
+
+
 </body>
 </html>
