@@ -1,0 +1,127 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+:root {
+    --white: #ffffff;
+    --skin: rgba(238,224,208);
+  }
+/* navbar top */
+.navbar-top{
+    width: 100%;
+    height: 10vh;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    justify-content: space-between;
+}
+.social-link i img{
+    margin-left: 10px;
+    transition: 0.5s ease;
+    cursor: pointer;
+}
+.social-link i img:hover{
+    background-color: var(--skin);
+    border-radius: 50px;
+}
+@media screen and (max-width:420px){
+    .social-link i img{
+        width: 20px;
+    }
+}
+.logo h3{
+    color:black;
+    font-weight: bold;
+}
+@media screen and (max-width:420px){
+    .logo h3{
+        font-size: 20px;
+    }
+}
+.icons i img{
+    margin-left: 10px;
+    cursor: pointer;
+}
+@media screen and (max-width:420px){
+    .icons i img{
+        width: 20px;
+    }
+}
+.searchbar{
+    form {
+        display: inline-block; /* To make the form wrap around the input and button */
+        position: relative; /* Positioning for icon */
+      }
+    
+      input[type="text"] {
+        padding: 8px 40px 8px 8px; /* Adjust padding for input field and icon space */
+        border-radius: 10px; /* Rounded border */
+        border: 1px solid #ccc; /* Border color */
+        width: 400px; /* Adjust the width as needed */
+      }
+    
+      input[type="submit"] {
+        border-radius: 10px; /* Rounded border for submit button */
+        padding: 8px 16px; /* Adjust padding as needed */
+        background-color: var(--white); /* Background color */
+        border: 1px solid #ccc; /* Border color */
+      }
+    
+      /* Style for the search icon */
+      .search-icon {
+        position: absolute;
+        top: 50%;
+        right: 10px;
+        transform: translateY(-50%);
+        pointer-events: auto; /* Allow the icon to be clickable */
+        cursor: pointer; /* Change cursor on hover */
+      }
+}
+/* navbar top */
+
+/* main content */
+
+
+/* navbar */
+#navbar-color{
+    background-color: var(--skin);
+}
+.navbar-nav{
+    margin: auto;
+}
+.nav-link{
+    margin-left: 30px;
+    font-weight: bold;
+    color: black;
+    transition: 0.5s ease;
+    cursor: pointer;
+}
+.nav-link:hover{
+    color: green;
+}
+/* navbar */
+.content{
+    margin-top: 150px;
+    margin-left: 60px;
+}
+.content h1{
+    font-size: 50px;
+}
+#btn1 button{
+    width: 150px;
+    height: 32px;
+    background: transparent;
+    border: 1px solid black;
+    letter-spacing: 3px;
+    font-weight: bold;
+    transition: 0.5s ease;
+    cursor: pointer;
+}
+#btn1 button:hover{
+    background-color: green;
+}
+@media screen and (max-width:420px){
+    .content h1{
+        font-size: 30px;
+    }
+}
