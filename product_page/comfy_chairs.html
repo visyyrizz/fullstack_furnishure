@@ -25,29 +25,19 @@
             <div class="logo">
                 <a href="../index.html"><h3>FURNISHURE</h3></a>
             </div>
-            <div class="searchbar">
-                <form id="searchForm" action="/search" method="get">
-                    <input type="text" id="search" name="q" placeholder="Search...">
-                    <!-- SVG search icon -->
-                    <svg class="search-icon" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" onclick="submitForm()">
-                      <path d="M15.5 14h-.79l-.28-.27a6.5 6.5 0 0 0 1.48-5.34c-.47-2.78-2.89-5-5.75-5.34a6.505 6.505 0 0 0-7.34 7.33c.34 2.86 2.56 5.28 5.34 5.75a6.5 6.5 0 0 0 5.34-1.48l.27.28v.79l4.25 4.25c.41.41 1.08.41 1.49 0 .41-.41.41-1.08 0-1.49L15.5 14zm-6 0C7.01 14 5 11.99 5 9.5S7.01 5 9.5 5 14 7.01 14 9.5 11.99 14 9.5 14z"/>
-                      <path d="M0 0h24v24H0z" fill="none"/>
-                    </svg>
-                  </form>
-                  
-                  <script>
-                    function submitForm() {
-                      document.getElementById('searchForm').submit();
-                    }
-                  </script>
-            </div>
+            <div class="search-container">
+              <input type="text" id="searchBar" placeholder="Search for furniture...">
+              <div id="searchDropdown" class="search-dropdown"></div>
+              <script src="../searchbar.js"></script>
+          </div>
             <div class="icons">
                 <i><a href="../login.html"><img src="../image/w38-profile-icon.svg" alt="" width="25px"></a></i>
                 <i><img src="../image/heart.png" alt="" width="20px"></i>
                 <i><img src="../image/shopping-cart.png" alt="" width="25px"></i>
             </div>
+            </div>
         </div>
-    </div>
+    
     <!-- navbar top -->
 
     <!-- main content -->
