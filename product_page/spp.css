@@ -69,7 +69,8 @@
   }
   
   #searchDropdown div {
-    padding: 8px;
+    padding: 10px;
+    padding-right: 150px;
     cursor: pointer;
     color: #007bff;
     text-decoration: underline;
