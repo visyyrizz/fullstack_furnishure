@@ -5,7 +5,7 @@
                 var totalInput = document.getElementById('third');
             
                 // Constants
-                var productPrice = 19999; // Set the product price
+                var productPrice = 9440; // Set the product price
                 var taxRate = 0.18; // 18% tax rate
             
                 // Get the quantity
