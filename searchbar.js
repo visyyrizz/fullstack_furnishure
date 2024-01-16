@@ -4,8 +4,8 @@ document.addEventListener('DOMContentLoaded', function() {
   
     // Sample furniture data
     const furnitureItems = [
-        { name: 'Chair', link: 'chair.html' },
-        { name: 'Table', link: 'table.html' },
+        { name: 'Chair', link: './product_page/comfy_chairs.html' },
+        { name: 'Dining Table', link: 'table.html' },
         { name: 'Sofa', link: 'sofa.html' },
         // Add more furniture items as needed
     ];
