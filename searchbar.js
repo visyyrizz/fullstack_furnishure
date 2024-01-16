@@ -9,8 +9,8 @@ document.addEventListener('DOMContentLoaded', function() {
         { name: 'Sofa', link: './product_page/sofa.html' },
         { name: 'bed', link: './product_page/bed.html' },
         { name: 'lamps', link: './product_page/lamp.html' },
-        { name: 'Study table', link: './product_page/studytable.html' }
-        { name: 'work bench', link: './product_page/workbenk.html' }
+        { name: 'Study table', link: './product_page/studytable.html' },
+        { name: 'work bench', link: './product_page/workbenk.html' },
         // Add more furniture items as needed
     ];
   
