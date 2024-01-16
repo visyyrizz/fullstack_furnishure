@@ -5,8 +5,12 @@ document.addEventListener('DOMContentLoaded', function() {
     // Sample furniture data
     const furnitureItems = [
         { name: 'Chair', link: './product_page/comfy_chairs.html' },
-        { name: 'Dining Table', link: 'table.html' },
-        { name: 'Sofa', link: 'sofa.html' },
+        { name: 'Dining Table', link: './product_page/diningtable.html' },
+        { name: 'Sofa', link: './product_page/sofa.html' },
+        { name: 'bed', link: './product_page/bed.html' },
+        { name: 'lamps', link: './product_page/lamp.html' },
+        { name: 'Study table', link: './product_page/studytable.html' }
+        { name: 'work bench', link: './product_page/workbenk.html' }
         // Add more furniture items as needed
     ];
   
